@@ -7,9 +7,9 @@
  * 
  * Here are also some examples setup with trunk versions of their respective compilers, and all the libraries,
  * as well as max optimization and warning flags:
- * Clang: 
- * GCC: 
- * MSVC: 
+ * Clang: https://godbolt.org/z/fvWs5v
+ * GCC: https://godbolt.org/z/od7rv4
+ * MSVC: https://godbolt.org/z/7Goqx6
  */
 
 // Some general C++ includes
