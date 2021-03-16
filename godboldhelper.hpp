@@ -28,12 +28,13 @@
     #include <nlohmann/json.hpp>
 #   endif // !GH_JSON
 
-// Some external libraries. Call GH_INCLUDE_EXTERNALS after the include to this file to include them properly
-#   ifdef GH_EXTERNAL_INCLUDES
-    #define GH_INCLUDE_EXTERNALS \
-        #include "https://raw.githubusercontent.com/Neargye/nameof/master/include/nameof.hpp" \
-        #include "https://raw.githubusercontent.com/Neargye/magic_enum/master/include/magic_enum.hpp"
-#endif
+// Some external libraries straight from github. To use these in a local project, just get the headers and include them in your project
+#   ifdef GH_NAMEOF
+    #include "https://raw.githubusercontent.com/Neargye/nameof/master/include/nameof.hpp"
+#   endif // !GH_NAMEOF
+#   ifdef GH_MAGIC_ENUM
+    #include "https://raw.githubusercontent.com/Neargye/magic_enum/master/include/magic_enum.hpp"
+#   endif // !GH_MAGIC_ENUM
 
 #else // GH_INCLUDE_INDIVIDUAL
 
@@ -41,8 +42,7 @@
 #include <glm/glm.hpp>
 #include <nlohmann/json.hpp>
 
-#define GH_INCLUDE_EXTERNALS \
-#include "https://raw.githubusercontent.com/Neargye/nameof/master/include/nameof.hpp" \
+#include "https://raw.githubusercontent.com/Neargye/nameof/master/include/nameof.hpp"
 #include "https://raw.githubusercontent.com/Neargye/magic_enum/master/include/magic_enum.hpp"
 
 #endif // !GH_INCLUDE_INDIVIDUAL
