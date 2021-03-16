@@ -12,7 +12,6 @@
  * MSVC: 
  */
 
-
 // Some general C++ includes
 // Deliberatly not including stl stuff like vector and string
 #include <cstdint>
